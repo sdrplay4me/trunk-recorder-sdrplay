@@ -39,5 +39,4 @@
 		"captureDir":"recordings",
         "frequencyFormat":"mhz",
         "logLevel":"info",
-"logFile":true
 }
