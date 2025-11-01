@@ -5,10 +5,7 @@ This project was developed on Debian 12 amd64.
 
 ### Install required apps
 ```
-sudo apt-get install -y apt-transport-https build-essential ca-certificates fdkaac git gnupg gnuradio gnuradio-dev \
-						gr-osmosdr libuhd-dev libboost-all-dev libcurl4-openssl-dev libgmp-dev libhackrf-dev \
-						liborc-0.4-dev libpthread-stubs0-dev libssl-dev libuhd-dev libusb-dev pkg-config \
-						software-properties-common cmake libsndfile1-dev sox
+sudo apt-get install -y apt-transport-https build-essential ca-certificates fdkaac git gnupg gnuradio gnuradio-dev gr-osmosdr libuhd-dev libboost-all-dev libcurl4-openssl-dev libgmp-dev libhackrf-dev liborc-0.4-dev libpthread-stubs0-dev libssl-dev libuhd-dev libusb-dev pkg-config software-properties-common cmake libsndfile1-dev sox
 ```
 
 ### Install SDRPlay API
