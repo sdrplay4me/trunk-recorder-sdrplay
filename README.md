@@ -1,5 +1,5 @@
-# Preamble
-## This project was developed on Debian 12 amd64.
+# Preamble:
+This project was developed on Debian 12 amd64.
 
 ### Add **contrib** and **non-free** repos to apt sources and update.
 
