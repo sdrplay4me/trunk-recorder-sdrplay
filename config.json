@@ -1,0 +1,43 @@
+{
+        "ver":2,
+        "sources":[
+                {
+                        "center":156000000.0,
+                        "rate":10000000,
+                        "gain":36,
+                        "driver":"osmosdr",
+						"device":"soapy,driver=sdrplay",
+						"audioArchive":true,
+						"callLog":true
+                }
+        ],
+        "systems":[
+                {
+						"talkgroupsFile":"talkgroups.csv",
+						"channelFile":"channel.csv",
+                        "type":"conventionalDMR",
+                        "squelch": -60,
+                        "shortName":"sdrplay",
+						"audioArchive":true
+                }
+        ],
+		"plugins":[
+				{
+						"name": "rdioscanner_uploader",
+						"library": "librdioscanner_uploader.so",
+						"server": "http://debius:3000",
+						"systems": [{
+								"shortName": "sdrplay",
+								"apiKey": "7007b303-d60c-4eeb-a7bf-0c59ec0cf21f",
+								"systemId": 411
+								}]
+				  }
+		],
+		"logFile":true,
+		"logDir":"logs/",
+		"consoleLog":true,
+		"captureDir":"recordings",
+        "frequencyFormat":"mhz",
+        "logLevel":"info",
+"logFile":true
+}
