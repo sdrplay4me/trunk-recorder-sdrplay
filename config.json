@@ -38,5 +38,5 @@
 		"consoleLog":true,
 		"captureDir":"recordings",
         "frequencyFormat":"mhz",
-        "logLevel":"info",
+        "logLevel":"info"
 }
