@@ -16,19 +16,6 @@ sudo bash SDRplay_RSP_API-Linux-3.15.2.run
 sudo systemctl status sdrplay.service
 ```
 
-### Install gr-osmosdr
-```
-cd ~
-git clone https://gitea.osmocom.org/sdr/gr-osmosdr.git
-cd gr-osmosdr/
-mkdir build
-cd build/
-cmake -DENABLE_NONFREE=TRUE ../
-make -j
-sudo make install
-sudo ldconfig
-```
-
 ### Install SoapySDR
 ```
 cd ~
@@ -64,4 +51,17 @@ cd trunk-build
 cmake ../trunk-recorder
 make -j
 sudo make install
+```
+
+### Install gr-osmosdr
+```
+cd ~
+git clone https://gitea.osmocom.org/sdr/gr-osmosdr.git
+cd gr-osmosdr/
+mkdir build
+cd build/
+cmake -DENABLE_NONFREE=TRUE ../
+make -j
+sudo make install
+sudo ldconfig
 ```
